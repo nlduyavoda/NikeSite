@@ -1,0 +1,103 @@
+.container {
+  margin: 10px;
+  position: relative;
+  height: 400px;
+  width: 280px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+/* Display */
+.display__product {
+  position: relative;
+  margin: 30px auto;
+  height: 200px;
+  width: 200px;
+  background: #feece0;
+  border-radius: 50%;
+  z-index: 10;
+}
+.display__product::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60%;
+  width: 60%;
+  background: #fde0ce;
+  border-radius: 50%;
+  z-index: 9;
+}
+.display__product img {
+  height: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(15deg);
+  -webkit-filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.4));
+  z-index: 11;
+}
+/* Name */
+.title__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.title__section span {
+  display: flex;
+  align-items: center;
+  color: #929292;
+}
+.title__section span i {
+  margin-right: 5px;
+  font-size: 14px;
+  color: #fdd446;
+  line-height: 8px;
+}
+.title h2 {
+  color: #424aa4;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Baloo 2";
+}
+
+/* Title */
+.product__add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product__add .price {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Baloo 2";
+  color: #121212;
+}
+.product__add .price:first-letter {
+  font-size: 14px;
+  padding-right: 5px;
+}
+.btn_addToCart {
+  padding: 5px 10px;
+  width: 150px;
+  background: #f7f7f7;
+  color: #424aa4;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn_addToCart:hover,
+.btn_addToCart:focus {
+  opacity: 0.9;
+  outline: 0;
+}
+
+.btn_addToCart:active {
+  box-shadow: none;
+  margin-top: 6px;
+}

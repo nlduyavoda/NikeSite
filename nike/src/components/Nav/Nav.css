@@ -1,0 +1,56 @@
+#navLogo {
+  margin-left: 20px;
+  height: 40px;
+  width: 60px;
+}
+.navbar {
+  margin-top: 10px;
+}
+.navMenu {
+  justify-content: center;
+}
+.navItem {
+  color: black;
+  font-weight: bold;
+  font-size: 120%;
+}
+.formSearch {
+  display: inline-flex;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: black;
+}
+.CartIcon {
+  display: inline-flex;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  color: black;
+}
+
+.inputSearch {
+  width: 50%;
+}
+.icon {
+  margin: 5px;
+}
+.iconHeart {
+  margin: 5px;
+}
+.iconCart {
+  margin: 5px;
+  font-size: 25px;
+}
+.input_field {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  border: none;
+}
+.iconCart {
+  display: inline-flex;
+  margin: 5px;
+}
+.amount {
+  font-size: 15px;
+  text-align: center;
+}
