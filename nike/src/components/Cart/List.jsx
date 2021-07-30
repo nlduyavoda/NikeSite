@@ -4,8 +4,8 @@ import { ProductContext } from "../../Context/ProductContext";
 import Item from "./Item";
 import "./List.css";
 function List() {
-  const { Products } = useContext(ProductContext);
   const arr = useSelector((state) => state.cart.cartList);
+  const Products = useSelector((state) => state.product.productList);
   let carts = [];
 
   const getProduct = (id, amount) => {

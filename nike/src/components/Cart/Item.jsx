@@ -6,8 +6,8 @@ function Item({ name, price, amount, product }) {
   return (
     <tr>
       <td>
-        <div class="product-img">
-          <div class="img-prdct">
+        <div className="product-img">
+          <div className="img-prdct">
             <img src="https://image.flaticon.com/icons/png/512/3144/3144467.png" />
           </div>
         </div>
@@ -16,18 +16,18 @@ function Item({ name, price, amount, product }) {
         <p>{name}</p>
       </td>
       <td>
-        <div class="button-container">
+        <div className="button-container">
           <button
-            class="cart-qty-plus"
+            className="cart-qty-plus"
             onClick={() => increaseAmount(product)}
             type="button"
             value="+"
           >
             +
           </button>
-          <div className="amount">{amount}</div>
+          <div classNameName="amount">{amount}</div>
           <button
-            class="cart-qty-minus"
+            className="cart-qty-minus"
             onClick={() => reduceAmount(product)}
             type="button"
             value="-"
@@ -37,11 +37,16 @@ function Item({ name, price, amount, product }) {
         </div>
       </td>
       <td>
-        <input type="text" value={price} class="price form-control" disabled />
+        <input
+          type="text"
+          value={price}
+          className="price form-control"
+          disabled
+        />
       </td>
       <td align="right">
         ${" "}
-        <span id="amount" class="amount">
+        <span id="amount" className="amount">
           0
         </span>
       </td>
