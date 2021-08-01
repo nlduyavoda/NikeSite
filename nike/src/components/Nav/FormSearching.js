@@ -1,8 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Col, Form, FormGroup, Input } from "reactstrap";
 import { BsSearch, BsHeart, BsBag } from "react-icons/bs";
-import { ProductContext } from "../../Context/ProductContext";
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Cart from "../../pages/Cart/index";
 function FormSearching() {
   return (

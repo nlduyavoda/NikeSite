@@ -1,6 +1,5 @@
 import React from "react";
 import NavFilter from "../components/Filter/NavFilter";
-import Nav from "../components/Nav/Nav";
 import ProductList from "../components/ProductList/ProductList";
 import SideBar from "../components/SideBar/SideBar";
 function home(props) {

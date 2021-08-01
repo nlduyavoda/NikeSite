@@ -7,8 +7,8 @@ import GetList from "../api/GetList";
 export const ProductContext = createContext();
 const ProductContextProvider = ({ children }) => {
   const ListCart = useSelector((state) => state.product.productList);
-
   const dispatch = useDispatch();
+
   useEffect(async () => {
     const FetchListProduct = async () => {
       try {
@@ -32,34 +32,6 @@ const ProductContextProvider = ({ children }) => {
     FetchListCart();
     FetchListProduct();
   }, []);
-
-  // const increaseAmount = (product) => {
-  //   console.log("increase");
-  //   const { id } = product;
-  //   const list = ListCart.map((item) => {
-  //     if (item.id === id) {
-  //       item.amount += 1;
-  //     }
-  //     return item;
-  //   });
-  //   setListCart(list);
-  // };
-  // const reduceAmount = (product) => {
-  //   const { id } = product;
-  //   const list = ListCart.map((item) => {
-  //     if (item.id === id) {
-  //       if (item.amount > 0) {
-  //         item.amount -= 1;
-  //         console.log(item.amount);
-  //       }
-  //       if (item.amount <= 0) {
-  //         alert("can't reduce item");
-  //       }
-  //     }
-  //     return item;
-  //   });
-  //   setListCart(list);
-  // };
   const handleOnClick = (product) => {
     //Check Cart
     console.log("ListCart", ListCart);

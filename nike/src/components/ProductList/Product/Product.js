@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./Product.css";
 import { useDispatch, useSelector } from "react-redux";
 import { FaShoppingCart } from "react-icons/fa";
@@ -28,22 +28,9 @@ function Product(props) {
       const test = [...cart_items, newProduct];
       dispatch(SetCarts(test));
     }
-
-    console.log("cart_items", cart_items);
-
-    // CÁCH 2
-    // cart_items.map((item) => {
-    //   if (item.productId === newProduct.productId) {
-    //     item.amount++;
-    //   }
-    //   if (item.productId !== newProduct.productId) {
-    //     cart_items.push(newProduct);
-    //   }
-    // });
-    // dispatch(SetCarts(cart_items));
-    // console.log("cart_items", cart_items);
   };
 
+  console.log("cart_items", cart_items);
   return (
     <div className="col-4 product">
       <div className="container " key={product.id}>

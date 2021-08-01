@@ -1,4 +1,9 @@
 .productList {
   margin: 20px;
 }
-
+.col-md-3{
+  background-color: lightblue;
+}
+.col-lg-6{
+  background-color: lightcoral;
+}
