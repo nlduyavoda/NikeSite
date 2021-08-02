@@ -6,7 +6,6 @@ import GetList from "../api/GetList";
 
 export const ProductContext = createContext();
 const ProductContextProvider = ({ children }) => {
-  const ListCart = useSelector((state) => state.product.productList);
   const dispatch = useDispatch();
 
   useEffect(async () => {
@@ -32,76 +31,7 @@ const ProductContextProvider = ({ children }) => {
     FetchListCart();
     FetchListProduct();
   }, []);
-  const handleOnClick = (product) => {
-    //Check Cart
-    console.log("ListCart", ListCart);
-    // if (ListCart.length > 0) {
-    //   //Item cart is same
-    //   let isSame = false;
-    //   const { id } = product;
-    //   ListCart.map((item) => {
-    //     if (item.id === id) {
-    //       isSame = true;
-    //       SetSelected(id);
-    //       return item.amount++;
-    //     }
-    //     return item;
-    //   });
-    //   axios
-    //     .put(`http://localhost:3000/api/cart/${selected}`, ListCart)
-    //     .then((response) => console.log("response", response.data));
-    //   if (!isSame) {
-    //     const newProduct = {
-    //       id: product.id,
-    //       name: product.name,
-    //       amount: 1,
-    //       price: product.price,
-    //     };
-    //     const newCart = {
-    //       userID: 1,
-    //       product: [
-    //         {
-    //           productId: newProduct.id,
-    //           amount: newProduct.amount,
-    //         },
-    //       ],
-    //     };
-    //   }
-    // } else {
-    //   const newProduct = {
-    //     id: product.id,
-    //     name: product.name,
-    //     amount: 1,
-    //     price: product.price,
-    //   };
-    //   const newCart = {
-    //     userID: 1,
-    //     product: [
-    //       {
-    //         productId: newProduct.id,
-    //         amount: newProduct.amount,
-    //       },
-    //     ],
-    //   };
-    //   console.log("new cart: ", newCart);
-    //   axios({
-    //     method: "POST",
-    //     url: "http://localhost:3000/api/cart/",
-    //     data: newCart,
-    //   })
-    //     .then((res) => {
-    //       dispatch(PostListCart(res));
-    //     })
-    //     .catch((err) => {
-    //       console.log(err);
-    //     });
-    // }
-  };
   const ProductContextData = {
-    ListCart,
-    handleOnClick,
-    // increaseAmount,
-    // reduceAmount,
   };
   return (
     <ProductContext.Provider value={ProductContextData}>

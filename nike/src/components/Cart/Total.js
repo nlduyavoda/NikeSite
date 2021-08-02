@@ -3,34 +3,34 @@ import "./Total.css";
 function Total(props) {
   return (
     <div>
-      <div class="totals">
-        <div class="totals-item">
+      <div className="totals">
+        <div className="totals-item">
           <head className="Sumary">Sumary</head>
-          <div class="totals-value" id="cart-subtotal">
+          <div className="totals-value" id="cart-subtotal">
             71.97
           </div>
         </div>
-        <div class="totals-item">
+        <div className="totals-item">
           <label>Tax (5%)</label>
-          <div class="totals-value" id="cart-tax">
+          <div className="totals-value" id="cart-tax">
             3.60
           </div>
         </div>
-        <div class="totals-item">
+        <div className="totals-item">
           <label>Shipping</label>
-          <div class="totals-value" id="cart-shipping">
+          <div className="totals-value" id="cart-shipping">
             15.00
           </div>
         </div>
-        <div class="totals-item totals-item-total">
+        <div className="totals-item totals-item-total">
           <label>Grand Total</label>
-          <div class="totals-value" id="cart-total">
+          <div className="totals-value" id="cart-total">
             90.57
           </div>
         </div>
       </div>
 
-      <button class="checkout">Checkout</button>
+      <button className="checkout">Checkout</button>
     </div>
   );
 }

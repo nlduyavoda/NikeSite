@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { increase, reduce } from "../../redux/actions/cart_action";
 import "./List.css";
-function Item({ price, amount, product }) {
+function Item({ name, image, price, amount, product, total }) {
   const dispatch = useDispatch();
+
   const increaseAmount = (productId) => {
     dispatch(increase(productId));
   };
@@ -17,10 +18,7 @@ function Item({ price, amount, product }) {
       <td>
         <div className="product-img">
           <div className="img-prdct">
-            <img
-              src="https://image.flaticon.com/icons/png/512/3144/3144467.png"
-              alt=""
-            />
+            <img src={image} alt="" />
           </div>
         </div>
       </td>
@@ -59,7 +57,7 @@ function Item({ price, amount, product }) {
       <td align="right">
         ${" "}
         <span id="amount" className="amount">
-          0
+          {total}
         </span>
       </td>
     </tr>

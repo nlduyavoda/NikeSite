@@ -15,7 +15,6 @@ function Product(props) {
   };
 
   const handleOnClick = () => {
-    // CÁCH 1
     let isSame = false;
     cart_items.forEach((item) => {
       if (item.productId === newProduct.productId) {
@@ -30,7 +29,6 @@ function Product(props) {
     }
   };
 
-  console.log("cart_items", cart_items);
   return (
     <div className="col-4 product">
       <div className="container " key={product.id}>

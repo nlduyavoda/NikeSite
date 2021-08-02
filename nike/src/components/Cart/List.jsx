@@ -4,15 +4,20 @@ import Item from "./Item";
 import "./List.css";
 function List() {
   const arr = useSelector((state) => state.cart.cartList);
-  console.log("arr", arr);
+  const products = useSelector((state) => state.product.productList);
+  var sumTotal = 0;
   const item = arr.map((item) => {
+    const subitem = products.find((subitem) => subitem.id === item.productId);
+    sumTotal += subitem.price * item.amount;
     return (
       <Item
         key={item.id}
-        name={item.name}
-        price={item.price}
+        name={subitem.name}
+        price={subitem.price}
+        image={subitem.image}
         amount={item.amount}
         product={item}
+        total={subitem.price * item.amount}
       />
     );
   });
@@ -45,7 +50,7 @@ function List() {
                     <strong>
                       TOTAL = ${" "}
                       <span id="total" className="total">
-                        0
+                       {sumTotal}
                       </span>
                     </strong>
                   </td>
