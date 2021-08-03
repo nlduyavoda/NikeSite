@@ -1,36 +1,35 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import "./Total.css";
-function Total(props) {
+function Total() {
+  const Subtotal = useSelector((state) => state.cart.sumTotal);
+  const Grand_Total = Subtotal + 15;
   return (
-    <div>
-      <div className="totals">
-        <div className="totals-item">
-          <head className="Sumary">Sumary</head>
-          <div className="totals-value" id="cart-subtotal">
-            71.97
-          </div>
-        </div>
-        <div className="totals-item">
-          <label>Tax (5%)</label>
-          <div className="totals-value" id="cart-tax">
-            3.60
-          </div>
-        </div>
-        <div className="totals-item">
-          <label>Shipping</label>
-          <div className="totals-value" id="cart-shipping">
-            15.00
-          </div>
-        </div>
-        <div className="totals-item totals-item-total">
-          <label>Grand Total</label>
-          <div className="totals-value" id="cart-total">
-            90.57
-          </div>
+    <div className="subTotal col-12">
+      <div className="row-3">
+        <head className="Sumary">Sumary</head>
+      </div>
+      <div className=" row-3">
+        <label>Subtotal</label>
+        <div className="subTotal_price" id="cart-shipping">
+          {Subtotal}
         </div>
       </div>
-
-      <button className="checkout">Checkout</button>
+      <div className="subTotal_shippping row-3">
+        <label>Estimated Delivery and Handling</label>
+        <div className="subTotal_price" id="cart-shipping">
+          15.00
+        </div>
+      </div>
+      <div className="subTotal_total row-3">
+        <label>Grand Total</label>
+        <div className="subTotal_price" id="cart-total">
+          {Grand_Total}
+        </div>
+      </div>
+      <div className="checkout_container">
+        <button className="checkout_btn">Checkout</button>
+      </div>
     </div>
   );
 }

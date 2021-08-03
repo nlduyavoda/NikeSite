@@ -3,7 +3,10 @@ import { Col, Form, FormGroup, Input } from "reactstrap";
 import { BsSearch, BsHeart, BsBag } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import Cart from "../../pages/Cart/index";
+import { useSelector } from "react-redux";
 function FormSearching() {
+  const carts = useSelector((state) => state.cart.cartList);
+  console.log("cart.length", carts.length);
   return (
     <>
       <div className="input-icons">
@@ -37,7 +40,7 @@ function FormSearching() {
                 <div className="iconCart">
                   <BsBag />
                 </div>
-                <div className="amount">{Cart.length}</div>
+                <div className="amount">{carts.length}</div>
               </Link>
             </Col>
           </FormGroup>

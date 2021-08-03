@@ -69,3 +69,111 @@ button:focus,
 .amount {
   margin: 10px;
 }
+/* test css */
+.cart_detail {
+  display: flex;
+  border-bottom: 1px lightgray solid;
+}
+
+.infor__ {
+  margin: 20px;
+  margin-left: 40px;
+}
+.Description {
+  opacity: 60%;
+  font-weight: 500;
+  font-size: 20px;
+}
+.picture {
+  width: 150px;
+  height: 150px;
+  margin-top: 16px;
+  border-radius: 10%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.title_price {
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+}
+.cart__title {
+  font-weight: bold;
+}
+.cart__price {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+.coin {
+  height: 10px;
+}
+.cart__size__quantity {
+  display: flex;
+}
+
+.col2 {
+  width: 150px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.carts_footer {
+  display: flex;
+  margin-top: 25px;
+}
+.cart_underline {
+  width: 200px;
+  text-decoration: underline;
+  text-underline-offset: 0.1em;
+  text-underline-offset: 7px;
+}
+
+/* dropdown button */
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  font-size: 19px;
+  border: none;
+  cursor: pointer;
+}
+.cart__footer {
+  margin-top: 20px;
+}
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: white;
+}
+
+.dropdown {
+  width: 150px;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  opacity: 80%;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}

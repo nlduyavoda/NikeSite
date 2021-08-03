@@ -16,10 +16,22 @@ export const increase = (productId) => {
     payload: productId,
   };
 };
+export const total = (productId) => {
+  return {
+    type: "TOTAL_CARTS",
+    payload: productId,
+  };
+};
 
 export const reduce = (productId) => {
   return {
     type: "REDUCE_CARTS",
+    payload: productId,
+  };
+};
+export const remove = (productId) => {
+  return {
+    type: "REMOVE_CART",
     payload: productId,
   };
 };

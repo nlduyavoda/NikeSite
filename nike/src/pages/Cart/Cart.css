@@ -1,8 +1,17 @@
 .CartList {
-  background-color: white;
+  background-color: #fff;
   margin: 20px;
 }
 .CartTotal {
   margin: 20px;
-  background-color: lightgoldenrodyellow;
+}
+.fullcart {
+  padding: 3%;
+  display: flex;
+}
+.bag {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
 }
