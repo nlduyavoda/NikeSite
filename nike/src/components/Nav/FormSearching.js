@@ -6,7 +6,6 @@ import Cart from "../../pages/Cart/index";
 import { useSelector } from "react-redux";
 function FormSearching() {
   const carts = useSelector((state) => state.cart.cartList);
-  console.log("cart.length", carts.length);
   return (
     <>
       <div className="input-icons">
@@ -40,7 +39,7 @@ function FormSearching() {
                 <div className="iconCart">
                   <BsBag />
                 </div>
-                <div className="amount">{carts.length}</div>
+                {/* <div className="amount">{carts.length}</div> */}
               </Link>
             </Col>
           </FormGroup>

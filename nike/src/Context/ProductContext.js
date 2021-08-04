@@ -20,9 +20,13 @@ const ProductContextProvider = ({ children }) => {
     const FetchListCart = async () => {
       try {
         const response = await GetList.GetCarts();
-        const carts = response.filter((item) => item.userID === 1);
-        const [{ product }] = carts;
-        dispatch(SetCarts(product));
+        response.filter((item) => item.userID === 1);
+        const [{ carts_user }] = response;
+        carts_user.filter((item) => item.checkedOut === false);
+        console.log("carts_user", carts_user);
+        const [{ carts }] = carts_user;
+        console.log(carts);
+        dispatch(SetCarts(carts));
       } catch (error) {
         console.log("fail to fetch product list", error);
       }
@@ -31,8 +35,7 @@ const ProductContextProvider = ({ children }) => {
     FetchListCart();
     FetchListProduct();
   }, []);
-  const ProductContextData = {
-  };
+  const ProductContextData = {};
   return (
     <ProductContext.Provider value={ProductContextData}>
       {children}

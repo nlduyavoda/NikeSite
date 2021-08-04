@@ -6,7 +6,7 @@ const GetList = {
     return axiosClient.get(url, params);
   },
   GetCarts: (params) => {
-    const url = `/cart`;
+    const url = `/carts`;
     return axiosClient.get(url, params);
   },
 };

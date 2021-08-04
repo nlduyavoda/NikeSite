@@ -1,2 +1,26 @@
 .NavFilter {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+.hidden__filter {
+  margin: 5px;
+  margin-right: 3%;
+  display: flex;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.short_by {
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.dropbtn {
+  display: flex;
+}
+.icon_filter {
+  margin-left: 10px;
 }
