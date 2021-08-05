@@ -9,6 +9,10 @@ const GetList = {
     const url = `/carts`;
     return axiosClient.get(url, params);
   },
+  PutCarts: (params) => {
+    const url = `/carts/1`;
+    return axiosClient.put(url, params);
+  },
 };
 
 export default GetList;

@@ -11,12 +11,12 @@ const initialProductState = {
   selectedCart: {},
   sumTotal: 0,
 };
+
 export const cart_reducer = (state = initialProductState, action) => {
   const { type, payload } = action;
   switch (type) {
     case POST_CARTS:
       return { ...state, cartList: payload };
-
     case INCREASE_CARTS:
       let test = state.cartList.map((item) => {
         if (item.productId === payload) {

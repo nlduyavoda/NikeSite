@@ -10,12 +10,14 @@ function List() {
 
   var sumTotal = 0;
   const item = arr.map((item) => {
+    console.log("item.productId", item.productId);
+
     const subitem = products.find((subitem) => subitem.id === item.productId);
     sumTotal += subitem.price * item.amount;
     dispatch(total(sumTotal));
     return (
       <Item
-        key={item.id}
+        key={item.productId}
         name={subitem.name}
         price={subitem.price}
         image={subitem.image}

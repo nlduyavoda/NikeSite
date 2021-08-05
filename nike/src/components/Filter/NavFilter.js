@@ -3,7 +3,7 @@ import "./NavFilter.css";
 import { BsChevronCompactDown } from "react-icons/bs";
 import { BiSliderAlt } from "react-icons/bi";
 
-function NavFilter(props) {
+function NavFilter() {
   var size = [27.5, 28, 29, 30, 32];
   const shortByFunction = (event) => {
     document.getElementById("myDropdown").classList.toggle("show");

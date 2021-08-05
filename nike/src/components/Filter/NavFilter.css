@@ -24,3 +24,6 @@
 .icon_filter {
   margin-left: 10px;
 }
+#myDropdown {
+  z-index: 11;
+}

@@ -2,7 +2,7 @@ import React from "react";
 import NavFilter from "../components/Filter/NavFilter";
 import ProductList from "../components/ProductList/ProductList";
 import SideBar from "../components/SideBar/SideBar";
-function home(props) {
+function home() {
   return (
     <div>
       <NavFilter></NavFilter>

@@ -1,5 +1,4 @@
 import React from "react";
-// import Logo from "../../img/nike-logo.jpg";
 import Menu from "./Menu";
 import FormSearching from "./FormSearching";
 import "./Nav.css";

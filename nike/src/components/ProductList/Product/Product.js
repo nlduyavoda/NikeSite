@@ -14,10 +14,10 @@ function Product(props) {
     amount: 1,
   };
 
-  const handleOnClick = () => {
+  const handleOnClick = (id) => {
     let isSame = false;
     cart_items.forEach((item) => {
-      if (item.productId === newProduct.productId) {
+      if (item.productId === id) {
         isSame = true;
         item.amount += 1;
       }
@@ -45,7 +45,7 @@ function Product(props) {
             <span className="price">${product.price}</span>
             <button
               className="btn_addToCart"
-              onClick={() => handleOnClick(product)}
+              onClick={() => handleOnClick(product.id)}
             >
               <FaShoppingCart></FaShoppingCart>Add To Cart
             </button>

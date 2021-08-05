@@ -1,3 +1,104 @@
 .SideBar {
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.category {
+  justify-content: center;
+  color: black;
+  margin-left: 40px;
+  font-weight: bold;
+  font-size: 19px;
+  margin-top: 15px;
+  border-bottom: 1px lightgray solid;
+}
+.gender_title {
+  justify-content: space-between;
+  display: flex;
+}
+.gender {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  margin-left: 40px;
+  font-weight: bold;
+  font-size: 19px;
+  margin-top: 15px;
+  border-bottom: 1px lightgray solid;
+}
+.Size {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  margin-left: 40px;
+  font-weight: bold;
+  font-size: 19px;
+  margin-top: 15px;
+  border-bottom: 1px lightgray solid;
+}
+.sizeRow {
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.sizebox {
+  align-items: center;
+  height: 40px;
+  width: 60px;
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+  border-radius: 10%;
+  border: 1px lightgray solid;
+}
+.container_box {
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.colourBox {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  border: 1px lightgray solid;
+  align-self: center;
+  display: flex;
+  margin-top: 20px;
+}
+.colourText {
+  align-self: center;
+  font-size: 16px;
+  font-family: revert;
+  font-weight: 100;
+}
+#black {
+  background-color: black;
+}
+#red {
+  background-color: rgb(231, 53, 43);
+}
+#pink {
+  background-color: pink;
+}
+#blue {
+  background-color: lightblue;
+}
+#white {
+  background-color: white;
+}
+#green {
+  background-color: rgb(123, 186, 60);
+}
+#orange {
+  background-color: orange;
+}
+#purple {
+  background-color: rgb(141, 66, 159);
+}
+#Brown {
+  background-color: brown;
 }
