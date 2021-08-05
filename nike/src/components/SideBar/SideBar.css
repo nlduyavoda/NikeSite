@@ -5,6 +5,9 @@
   display: flex;
   flex-direction: column;
 }
+.category_item {
+  margin-top: 10px;
+}
 .category {
   justify-content: center;
   color: black;

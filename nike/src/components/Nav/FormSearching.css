@@ -1,0 +1,20 @@
+.CartIcon {
+  position: relative;
+}
+.amount {
+  font-size: 15px;
+  position: absolute;
+  top: 13px;
+  left: 2px;
+}
+.iconHeart {
+  margin-top: 10px;
+  font-size: 30px;
+}
+.formSearch {
+  margin-top: 10px;
+}
+.iconCart {
+  margin-top: 7px;
+  font-size: 30px;
+}

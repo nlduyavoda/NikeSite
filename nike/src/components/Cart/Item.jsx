@@ -66,7 +66,7 @@ function Item({ name, image, price, amount, product }) {
               >
                 +
               </button>
-              <div className="amount">{amount}</div>
+              <div className="cart_amount">{amount}</div>
               <button
                 className="cart-qty-minus"
                 onClick={() => reduceAmount(product.productId)}

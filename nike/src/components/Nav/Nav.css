@@ -33,24 +33,10 @@
 .icon {
   margin: 5px;
 }
-.iconHeart {
-  margin: 5px;
-}
-.iconCart {
-  margin: 5px;
-  font-size: 25px;
-}
+
 .input_field {
   width: 100%;
   padding: 10px;
   text-align: center;
   border: none;
-}
-.iconCart {
-  display: inline-flex;
-  margin: 5px;
-}
-.amount {
-  font-size: 15px;
-  text-align: center;
 }

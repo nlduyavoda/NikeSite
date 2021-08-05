@@ -3,6 +3,7 @@ import { Col, Form, FormGroup, Input } from "reactstrap";
 import { BsSearch, BsHeart, BsBag } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import "./FormSearching.css";
 function FormSearching() {
   const carts = useSelector((state) => state.cart.cartList);
   return (
@@ -25,16 +26,15 @@ function FormSearching() {
               </div>
             </Col>
             <Col sm={1}>
-              <div className="formSearch">
+              <Link to="#" className="CartIcon">
                 <div className="iconHeart">
                   <BsHeart />
                 </div>
-              </div>
+              </Link>
             </Col>
 
             <Col sm={1}>
               <Link to="/cart" className="CartIcon">
-                {" "}
                 <div className="iconCart">
                   <BsBag />
                 </div>

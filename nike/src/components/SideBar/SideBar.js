@@ -29,17 +29,17 @@ function SideBar() {
   return (
     <div className="SideBar">
       <div className="category">
-        <div className="">Lifestyle</div>
-        <div className="">Running</div>
-        <div className="">Basketball</div>
-        <div className="">Football</div>
-        <div className="">Trainning & Gym</div>
-        <div className="">Jordan</div>
-        <div className="">Skateboarding</div>
-        <div className="">Golf</div>
-        <div className="">Tennis</div>
-        <div className="">Athletics</div>
-        <div className="">Walking</div>
+        <div className="category_item">Lifestyle</div>
+        <div className="category_item">Running</div>
+        <div className="category_item">Basketball</div>
+        <div className="category_item">Football</div>
+        <div className="category_item">Trainning & Gym</div>
+        <div className="category_item">Jordan</div>
+        <div className="category_item">Skateboarding</div>
+        <div className="category_item">Golf</div>
+        <div className="category_item">Tennis</div>
+        <div className="category_item">Athletics</div>
+        <div className="category_item">Walking</div>
       </div>
       <div className="gender">
         <div className="gender_title">
