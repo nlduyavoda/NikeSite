@@ -20,24 +20,26 @@ function NavFilter() {
   return (
     <div>
       <div className="NavFilter">
-        <div className="hidden__filter">
-          Hide Filters
-          <div className="icon_filter">
-            <BiSliderAlt />
-          </div>
-        </div>
-        <div class="short_by">
-          <button onClick={(event) => shortByFunction(event)} class="dropbtn">
-            Sort By
+        <div className="Category_fiter">Men Shoes (365)</div>
+        <div className="__filter">
+          <div className="hidden__">
+            Hide Filters
             <div className="icon_filter">
-              <BsChevronCompactDown />
+              <BiSliderAlt />
             </div>
-          </button>
-
-          <div id="myDropdown" class="dropdown-content">
-            {size.map((item) => {
-              return <a href="#home">{item}</a>;
-            })}
+          </div>
+          <div classNam="short_by">
+            <button onClick={(event) => shortByFunction(event)} class="dropbtn">
+              Sort By
+              <div className="icon_filter">
+                <BsChevronCompactDown />
+              </div>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              {size.map((item) => {
+                return <a href="#home">{item}</a>;
+              })}
+            </div>
           </div>
         </div>
       </div>
