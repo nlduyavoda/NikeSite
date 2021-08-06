@@ -3,6 +3,7 @@ import "./Product.css";
 import { useDispatch, useSelector } from "react-redux";
 import { FaShoppingCart } from "react-icons/fa";
 import { SetCarts } from "../../../redux/actions/cart_action";
+import { Link } from "react-router-dom";
 
 function Product(props) {
   const product = props.item;
@@ -36,11 +37,17 @@ function Product(props) {
           <img src={product.image} alt="" />
         </div>
         <div className="product__details">
-          <div className="title__section">
+          <Link
+            to={{
+              pathname: `/product-detail/${product.id}`,
+              state: product,
+            }}
+            className="title__section"
+          >
             <div className="title">
               <h2>{product.name}</h2>
             </div>
-          </div>
+          </Link>
           <div className="product__add">
             <span className="price">${product.price}</span>
             <button

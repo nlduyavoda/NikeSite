@@ -1,6 +1,7 @@
 import Home from "./pages/Home";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import Cart from "./pages/Cart/index";
+import ProductDetail from "./pages/ProductDetail/index";
 import Nav from "./components/Nav/Nav";
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/cart">
               <Cart />
             </Route>
+            <Route path="/product-detail/:id" children={<ProductDetail />} />
           </Switch>
         </div>
       </Router>
