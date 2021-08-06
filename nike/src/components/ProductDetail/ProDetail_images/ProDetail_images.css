@@ -1,0 +1,62 @@
+._images {
+  border: 1px black solid;
+}
+._image {
+  height: 434px;
+  width: 434px;
+  justify-self: center;
+}
+.infor_picture {
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+._picture {
+  width: 80px;
+  height: 80px;
+  margin-top: 16px;
+  border-radius: 5px;
+  box-shadow: 0.0625rem 0.0625rem 0.125rem 0.0625rem rgb(0 0 0 / 10%);
+}
+.infor_title {
+  margin: 5px;
+  display: flex;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  justify-content: space-between;
+}
+._price {
+  font-size: 20px;
+  font-weight: bold;
+}
+.infor_name {
+  font-size: 35px;
+  font-weight: bold;
+}
+.Size_infor_title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.Size_infor {
+  padding-bottom: 20px;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 340px;
+}
+.Size_infor_item {
+  align-items: center;
+  height: 50px;
+  width: 100px;
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+  border-radius: 10%;
+  border: 1px lightgray solid;
+}

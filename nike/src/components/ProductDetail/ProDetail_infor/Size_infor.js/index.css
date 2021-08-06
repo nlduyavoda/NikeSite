@@ -1,0 +1,33 @@
+.Size_infor_btnGroup {
+  display: flex;
+  padding: 10px;
+  margin-left: 5%;
+  flex-direction: column;
+}
+.Size_infor_checkout {
+  height: 60px;
+  background-color: black;
+  color: white;
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 20px;
+  margin-top: 20px;
+  width: 85%;
+}
+
+.Size_infor_Favourite {
+  display: flex;
+  width: 85%;
+  height: 60px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+._Favourite_icon {
+  margin-left: 10px;
+}

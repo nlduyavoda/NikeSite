@@ -91,15 +91,7 @@ function SideBar() {
               </>
             );
           })}
-          {/* <div className="colourBox">black</div>
-          <div className="colourBox">black</div>
-          <div className="colourBox">black</div>
-          <div className="colourBox">black</div>
-          <div className="colourBox">black</div>
-          <div className="colourBox">black</div>
-          <div className="colourBox">black</div>
-          <div className="colourBox">black</div>
-          <div className="colourBox">black</div> */}
+        
         </div>
       </div>
     </div>
