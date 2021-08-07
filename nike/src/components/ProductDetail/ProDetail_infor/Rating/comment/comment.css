@@ -1,0 +1,21 @@
+.comment {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-top: 15%;
+  height: 120px;
+}
+.comment_title {
+  font-size: 17px;
+  font-weight: bold;
+}
+.comment_stars {
+  display: flex;
+}
+._date_name {
+  margin-left: 20px;
+  font-size: 18px;
+  opacity: 60%;
+}

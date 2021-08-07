@@ -1,0 +1,15 @@
+.rating_are {
+  flex-direction: column;
+}
+.reating_title {
+  display: flex;
+  margin-top: 15%;
+}
+.WriteReview_underline {
+  text-decoration: underline;
+  text-underline-offset: 0.1em;
+  text-underline-offset: 7px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 19px;
+}
