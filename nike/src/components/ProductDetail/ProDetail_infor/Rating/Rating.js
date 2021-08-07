@@ -14,7 +14,7 @@ function Rating(props) {
           <BsFillStarFill />
           <BsFillStarFill />
         </div>
-        <div>4.8 stars</div>
+        <div className="_iconStar_total">4.8 Stars</div>
       </div>
       <div className="WriteReview_underline" rel="stylesheet" href="">
         Write a Review
