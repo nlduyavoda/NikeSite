@@ -1,0 +1,30 @@
+.imageSlide {
+  display: flex;
+  flex-direction: row;
+  font-size: 35px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.show_property {
+  display: block;
+}
+.off_property {
+  display: none;
+}
+.bsLeft {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 1%;
+}
+.bsRight {
+  position: absolute;
+  top: 40%;
+  right: 1%;
+  cursor: pointer;
+}
+.image_slide {
+  height: 300px;
+  width: 300px;
+}
