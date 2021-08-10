@@ -1,0 +1,12 @@
+.slick-active .Slide_Indicators {
+  background-color: black;
+  font-size: 5px;
+  font-weight: bold;
+}
+.Slide_Indicators {
+  background-color: gray;
+  color: gray;
+  font-size: 5px;
+  font-weight: bold;
+  border-radius: 10px;
+}

@@ -1,4 +1,4 @@
-import Home from "./pages/Home";
+import Home from "./pages/Home/index";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import Cart from "./pages/Cart/index";
 import ProductDetail from "./pages/ProductDetail/index";

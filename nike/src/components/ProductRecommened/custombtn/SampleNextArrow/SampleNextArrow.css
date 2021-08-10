@@ -1,0 +1,13 @@
+.SampleNextArrow {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  font-family: none;
+  color: black;
+  font-size: 30px;
+  border-radius: 100%;
+  display: block;
+  top: 50%;
+  right: 0%;
+  cursor: pointer;
+}
