@@ -1,4 +1,4 @@
-.SideBar {
+.SideBar_ {
   margin-right: 15%;
   margin: 20px;
   height: 620px;
@@ -6,6 +6,22 @@
   display: flex;
   flex-direction: column;
 }
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .SideBar_container {
   margin-right: 15%;
 }

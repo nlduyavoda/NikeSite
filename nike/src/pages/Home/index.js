@@ -8,7 +8,7 @@ function Home() {
     <div>
       <NavFilter></NavFilter>
       <div className="row">
-        <div className="col-3">
+        <div className="col-3 SideBar">
           <SideBar></SideBar>
         </div>
         <div className="home_products col-8">

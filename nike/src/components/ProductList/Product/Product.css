@@ -1,10 +1,9 @@
 .container_products {
   margin: 10px;
   position: relative;
-  left: 12%;
-  top: 10%;
-  height: 400px;
-  width: 300px;
+  left: 5%;
+  height: 420px;
+  width: 350px;
   padding: 10px;
   background: #fff;
   box-shadow: 0.0625rem 0.0625rem 0.125rem 0.0625rem rgb(0 0 0 / 10%);
@@ -14,8 +13,8 @@
 .display__product {
   position: relative;
   margin: 30px auto;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   background: rgb(245, 245, 245);
   border-radius: 1.25rem;
   z-index: 10;
@@ -33,7 +32,7 @@
   z-index: 9;
 }
 .display__product img {
-  height: 230px;
+  height: 300px;
   position: absolute;
   top: 50%;
   left: 50%;

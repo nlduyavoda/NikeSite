@@ -27,7 +27,7 @@ function SideBar() {
   });
 
   return (
-    <div className="SideBar">
+    <div className="SideBar_">
       <div className="SideBar_container">
       <div className="category">
         <div className="category_item">Lifestyle</div>
