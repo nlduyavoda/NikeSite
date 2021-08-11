@@ -32,7 +32,7 @@ function Product(props) {
 
   return (
     <div className="col-4 product">
-      <div className="container " key={product.id}>
+      <div className="container_products" key={product.id}>
         <div className="display__product">
           <img src={product.image} alt="" />
         </div>

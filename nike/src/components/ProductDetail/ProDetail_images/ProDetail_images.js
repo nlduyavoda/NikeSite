@@ -83,12 +83,12 @@ function ProDetail_images(props) {
           </div>
         ))}
       </div>
-      <div className="loadMore_underline" rel="stylesheet" href="">
+      {/* <div className="loadMore_underline" rel="stylesheet" href="">
         <div className="loadMore_text">Load more (8)</div>
         <div className="loadMore_icon">
           <BsChevronCompactDown />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

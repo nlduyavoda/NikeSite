@@ -11,7 +11,7 @@ function Home() {
         <div className="col-3">
           <SideBar></SideBar>
         </div>
-        <div className="home_products col-9">
+        <div className="home_products col-8">
           <ProductList></ProductList>
         </div>
       </div>

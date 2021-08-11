@@ -28,6 +28,7 @@ function SideBar() {
 
   return (
     <div className="SideBar">
+      <div className="SideBar_container">
       <div className="category">
         <div className="category_item">Lifestyle</div>
         <div className="category_item">Running</div>
@@ -49,19 +50,19 @@ function SideBar() {
           </div>
         </div>
 
-        <div>
+        <div className="gender_checkbox">
           <input type="checkbox" id="myCheck"></input> Men
         </div>
-        <div>
+        <div className="gender_checkbox">
           <input type="checkbox" id="myCheck"></input> Women
         </div>
-        <div>
+        <div className="gender_checkbox">
           <input type="checkbox" id="myCheck"></input> Boys
         </div>
-        <div>
+        <div className="gender_checkbox">
           <input type="checkbox" id="myCheck"></input> Girls
         </div>
-        <div>+ More</div>
+        <div className="gender_checkbox">+ More</div>
       </div>
       <div className="Size">
         <div className="gender_title">
@@ -93,6 +94,7 @@ function SideBar() {
           })}
         
         </div>
+      </div>
       </div>
     </div>
   );

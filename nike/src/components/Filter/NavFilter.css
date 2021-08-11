@@ -9,8 +9,9 @@
   display: flex;
   background-color: white;
   border: none;
-  font-size: 20px;
+  font-size: 30px;
   cursor: pointer;
+  font-weight: bold;
 }
 .__filter {
   display: flex;

@@ -1,14 +1,22 @@
 .SideBar {
+  margin-right: 15%;
   margin: 20px;
   height: 620px;
   overflow: scroll;
   display: flex;
   flex-direction: column;
 }
+.SideBar_container {
+  margin-right: 15%;
+}
+.gender_checkbox {
+  margin-top: 20px;
+}
 .category_item {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .category {
+  padding-bottom: 15%;
   justify-content: center;
   color: black;
   margin-left: 40px;
@@ -23,6 +31,7 @@
 }
 .gender {
   display: flex;
+  padding-bottom: 15%;
   flex-direction: column;
   justify-content: center;
   color: black;
