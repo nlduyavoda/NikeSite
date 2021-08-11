@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { FaShoppingCart } from "react-icons/fa";
 import { SetCarts } from "../../../redux/actions/cart_action";
 import { Link } from "react-router-dom";
+import swal from "sweetalert";
 
 function Product(props) {
   const product = props.item;
@@ -16,6 +17,7 @@ function Product(props) {
   };
 
   const handleOnClick = (id) => {
+    swal("Added to cart !", { button: false, timer: 1200, icon: "success" });
     let isSame = false;
     cart_items.forEach((item) => {
       if (item.productId === id) {
