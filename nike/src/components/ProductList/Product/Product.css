@@ -1,20 +1,7 @@
 .container_products {
   margin: 10px;
   position: relative;
-  left: 5%;
   height: 420px;
-  width: 350px;
-  padding: 10px;
-  background: #fff;
-  box-shadow: 0.0625rem 0.0625rem 0.125rem 0.0625rem rgb(0 0 0 / 10%);
-  background-color: white;
-}
-.container_products_changed {
-  margin: 10px;
-  position: relative;
-  left: 5%;
-  height: 420px;
-  width: 500px;
   padding: 10px;
   background: #fff;
   box-shadow: 0.0625rem 0.0625rem 0.125rem 0.0625rem rgb(0 0 0 / 10%);
@@ -115,43 +102,6 @@
   margin-top: 6px;
 }
 
-/* .swal-overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 0;
-  overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0);
-  z-index: 10000;
-  pointer-events: none;
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-.swal-modal {
-  margin-bottom: 55%;
-  margin-left: 60%;
-  height: 100px;
-  width: 478px;
-  opacity: 0;
-  pointer-events: none;
-  background-color: rgb(66, 186, 150);
-  text-align: center;
-  border-radius: 5px;
-  position: static;
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  z-index: 10001;
-  transition: opacity 0.2s, -webkit-transform 0.3s;
-  transition: transform 0.3s, opacity 0.2s;
-  transition: transform 0.3s, opacity 0.2s, -webkit-transform 0.3s;
-} */
 .swal-text {
   font-size: 25px;
   position: relative;

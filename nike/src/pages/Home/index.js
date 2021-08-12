@@ -9,33 +9,18 @@ import { BiSliderAlt } from "react-icons/bi";
 import { SetSizeee } from "../../redux/actions/product_action";
 function Home() {
   const hiddenSideBar = useSelector((state) => state.product.Size);
-  const dispatch = useDispatch();
-  const handleOpen = () => {
-    dispatch(SetSizeee(!hiddenSideBar));
-    if (hiddenSideBar === true) {
-      var test = document.getElementById("SideBar");
-      test.classList.add("active");
-    } else {
-      var test = document.getElementById("SideBar");
-      test.classList.remove("active");
-    }
-  };
-
   return (
     <div>
-      <div id="open" className="hidden__" onClick={handleOpen}>
-        Hide Filters
-        <div className="icon_filter">
-          <BiSliderAlt />
-        </div>
-      </div>
-
       <NavFilter></NavFilter>
       <div className="row Home">
-        <div id="SideBar" className="SideBar">
+        <div className={hiddenSideBar === true ? "SideBar" : "SideBar active"}>
           <SideBar></SideBar>
         </div>
-        <div className="home_products">
+        <div
+          className={
+            hiddenSideBar === true ? "home_products" : "home_products active"
+          }
+        >
           <ProductList></ProductList>
         </div>
       </div>

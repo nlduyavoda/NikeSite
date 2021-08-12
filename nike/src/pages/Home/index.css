@@ -15,3 +15,11 @@
   width: 0%;
   transition: 0.7s;
 }
+.home_products {
+  width: 76%;
+  transition: 0.7s;
+}
+.home_products.active {
+  width: 96%;
+  transition: 0.7s;
+}

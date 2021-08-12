@@ -11,7 +11,6 @@ function Product(props) {
   const cart_items = useSelector((state) => state.cart.cartList);
   const hiddenSideBar = useSelector((state) => state.product.Size);
   const dispatch = useDispatch();
-
   const newProduct = {
     productId: product.id,
     amount: 1,
@@ -34,32 +33,35 @@ function Product(props) {
   };
 
   return (
-    <div className="col-4 product">
-      <div className="container_products" key={product.id}>
-        <div className="display__product">
-          <img src={product.image} alt="" />
-        </div>
-        <div className="product__details">
-          <Link
-            to={{
-              pathname: `/product-detail/${product.id}`,
-              state: product,
-            }}
-            className="title__section"
-          >
-            <div className="title">
-              <h2>{product.name}</h2>
-            </div>
-          </Link>
-          <div className="product__add">
-            <span className="price">${product.price}</span>
-            <button
-              className="btn_addToCart"
-              onClick={() => handleOnClick(product.id)}
-            >
-              <FaShoppingCart></FaShoppingCart>Add To Cart
-            </button>
+    <div
+      className={
+        hiddenSideBar === true ? "container_products" : "container_products "
+      }
+      key={product.id}
+    >
+      <div className="display__product">
+        <img src={product.image} alt="" />
+      </div>
+      <div className="product__details">
+        <Link
+          to={{
+            pathname: `/product-detail/${product.id}`,
+            state: product,
+          }}
+          className="title__section"
+        >
+          <div className="title">
+            <h2>{product.name}</h2>
           </div>
+        </Link>
+        <div className="product__add">
+          <span className="price">${product.price}</span>
+          <button
+            className="btn_addToCart"
+            onClick={() => handleOnClick(product.id)}
+          >
+            <FaShoppingCart></FaShoppingCart>Add To Cart
+          </button>
         </div>
       </div>
     </div>
