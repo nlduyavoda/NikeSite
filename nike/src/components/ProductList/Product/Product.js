@@ -9,6 +9,7 @@ import swal from "sweetalert";
 function Product(props) {
   const product = props.item;
   const cart_items = useSelector((state) => state.cart.cartList);
+  const hiddenSideBar = useSelector((state) => state.product.Size);
   const dispatch = useDispatch();
 
   const newProduct = {
@@ -34,7 +35,14 @@ function Product(props) {
 
   return (
     <div className="col-4 product">
-      <div className="container_products" key={product.id}>
+      <div
+        className={
+          hiddenSideBar === true
+            ? "container_products"
+            : "container_products_changed"
+        }
+        key={product.id}
+      >
         <div className="display__product">
           <img src={product.image} alt="" />
         </div>

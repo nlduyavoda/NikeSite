@@ -2,7 +2,7 @@
 // import GetList from "../../api/GetList";
 // import { SetCarts } from "../actions/cart_action";
 // import { SetListProduct } from "../actions/product_action";
-export const FetchListProduct = async () => {
+export const common_reduder = async () => {
   // try {
   //   const dispatch = useDispatch();
   //   const response = await GetList.GetProducts();

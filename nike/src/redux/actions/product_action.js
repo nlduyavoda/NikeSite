@@ -4,3 +4,9 @@ export const SetListProduct = (productList) => {
     payload: productList,
   };
 };
+export const SetSizeee = (props) => {
+  return {
+    type: "SET_SIZE",
+    payload: props,
+  };
+};
