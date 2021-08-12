@@ -38,11 +38,9 @@ function ProductList() {
 
   return (
     <div className="productList">
-      <div className="row">
-        {Products.map((item) => {
-          return <Product key={item.id} item={item}></Product>;
-        })}
-      </div>
+      {Products.map((item) => {
+        return <Product key={item.id} item={item}></Product>;
+      })}
     </div>
   );
 }

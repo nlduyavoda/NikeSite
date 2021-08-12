@@ -35,14 +35,7 @@ function Product(props) {
 
   return (
     <div className="col-4 product">
-      <div
-        className={
-          hiddenSideBar === true
-            ? "container_products"
-            : "container_products_changed"
-        }
-        key={product.id}
-      >
+      <div className="container_products" key={product.id}>
         <div className="display__product">
           <img src={product.image} alt="" />
         </div>

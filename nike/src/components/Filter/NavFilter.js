@@ -7,9 +7,7 @@ import { SetSizeee } from "../../redux/actions/product_action";
 function NavFilter() {
   const hiddenSideBar = useSelector((state) => state.product.Size);
   const dispatch = useDispatch();
-  const changeStateHideFilters = () => {
-    dispatch(SetSizeee(!hiddenSideBar));
-  };
+
   var size = [27.5, 28, 29, 30, 32];
   const shortByFunction = (event) => {
     document.getElementById("myDropdown").classList.toggle("show");
@@ -28,12 +26,6 @@ function NavFilter() {
       <div className="NavFilter">
         <div className="Category_fiter">Men Shoes (365)</div>
         <div className="__filter">
-          <div className="hidden__" onClick={changeStateHideFilters}>
-            {hiddenSideBar === true ? "Hide Filters" : "Show Filters"}
-            <div className="icon_filter">
-              <BiSliderAlt />
-            </div>
-          </div>
           <div classNam="short_by">
             <button onClick={(event) => shortByFunction(event)} class="dropbtn">
               Sort By
