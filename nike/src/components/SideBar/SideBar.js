@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./SideBar.css";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
+import Ichonveron from "../SideBar/IconChevron/index";
 
 function SideBar() {
   const arrSize = [];
@@ -42,6 +43,7 @@ function SideBar() {
     <div className="SideBar_">
       <div className="SideBar_container">
         <div className="category">
+          <Ichonveron />
           <div className="category_item">Lifestyle</div>
           <div className="category_item">Running</div>
           <div className="category_item">Basketball</div>
