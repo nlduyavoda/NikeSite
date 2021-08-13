@@ -67,14 +67,7 @@
   margin-top: 15px;
   border-bottom: 1px lightgray solid;
 }
-.sizeRow {
-  padding-bottom: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
+
 .sizebox {
   align-items: center;
   height: 40px;
@@ -131,4 +124,66 @@
 }
 #Brown {
   background-color: brown;
+}
+.gender_title_icon {
+  cursor: pointer;
+}
+.group_checkbox {
+  display: block;
+  height: 250px;
+  transition: 0.5s;
+}
+.group_checkbox.active {
+  height: 0px;
+  transition: 0.7s;
+}
+.gender_checkbox {
+  display: block;
+}
+
+.gender_checkbox.active {
+  display: none;
+}
+
+.group_size {
+  display: block;
+  height: 250px;
+  transition: 0.5s;
+}
+.group_size.active {
+  height: 0px;
+  transition: 0.5s;
+  padding-bottom: 20px;
+}
+.sizeRow {
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.sizeRow.active {
+  display: none;
+}
+
+.group_colour {
+  display: block;
+  height: 250px;
+  transition: 1s;
+  margin-bottom: 30px;
+}
+.group_colour.active {
+  height: 0px;
+  transition: 0.5s;
+}
+._colour {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+._colour.active {
+  visibility: hidden;
 }
