@@ -35,15 +35,11 @@ function SideBar() {
   const size = arrSize.map((item) => {
     return <div className="sizebox">{item}</div>;
   });
-  const colourMap = Colour.map((item) => {
-    <div className="colourBox">{item.color}</div>;
-  });
 
   return (
     <div className="SideBar_">
       <div className="SideBar_container">
         <div className="category">
-          <Ichonveron />
           <div className="category_item">Lifestyle</div>
           <div className="category_item">Running</div>
           <div className="category_item">Basketball</div>
@@ -58,9 +54,9 @@ function SideBar() {
         </div>
         <div className="gender">
           <div className="gender_title">
-            <div className="gender_title_">Gender(1)</div>
-            <div className="gender_title_icon" onClick={handleGenderBtn}>
-              {GenderBtn === true ? <BsChevronDown /> : <BsChevronUp />}
+            <div className="gender_title_">Gender (1)</div>
+            <div onClick={handleGenderBtn}>
+              <Ichonveron />
             </div>
           </div>
           <div
@@ -117,9 +113,9 @@ function SideBar() {
         </div>
         <div className="Size">
           <div className="gender_title">
-            <div className="gender_title_">SIZE</div>
+            <div className="gender_title_">Size</div>
             <div className="gender_title_icon" onClick={handleSizeBtn}>
-              {SizeBtn === true ? <BsChevronDown /> : <BsChevronUp />}
+              <Ichonveron />
             </div>
           </div>
           <div
@@ -130,12 +126,11 @@ function SideBar() {
             </div>
           </div>
         </div>
-        {/* //colour */}
         <div className="Size">
           <div className="gender_title">
             <div className="gender_title_">Colour</div>
             <div className="gender_title_icon" onClick={handleColourBtn}>
-              {ColourBtn === true ? <BsChevronDown /> : <BsChevronUp />}
+              <Ichonveron />
             </div>
           </div>
           <div

@@ -47,7 +47,7 @@
 }
 .gender {
   display: flex;
-  padding-bottom: 15%;
+  padding-bottom: 20px;
   flex-direction: column;
   justify-content: center;
   color: black;
@@ -125,9 +125,7 @@
 #Brown {
   background-color: brown;
 }
-.gender_title_icon {
-  cursor: pointer;
-}
+
 .group_checkbox {
   display: block;
   height: 250px;
@@ -171,7 +169,7 @@
   display: block;
   height: 250px;
   transition: 1s;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .group_colour.active {
   height: 0px;
@@ -185,5 +183,5 @@
   grid-row-gap: 0px;
 }
 ._colour.active {
-  visibility: hidden;
+  display: none;
 }

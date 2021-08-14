@@ -11,8 +11,8 @@ function Ichonveron() {
       <div
         className={
           state === true
-            ? "icon-chevron css-1apc7vz is--up"
-            : "icon-chevron css-1apc7vz is--down"
+            ? "icon-chevron css-1apc7vz is--down"
+            : "icon-chevron css-1apc7vz is--up"
         }
         onClick={handleOnClick}
       ></div>
