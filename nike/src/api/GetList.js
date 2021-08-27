@@ -2,11 +2,11 @@ import axiosClient from "./axiosClient";
 
 const GetList = {
   GetProducts: (params) => {
-    const url = `/products`;
+    const url = `/api/products`;
     return axiosClient.get(url, params);
   },
   GetCarts: (params) => {
-    const url = `/carts`;
+    const url = `/api/carts`;
     return axiosClient.get(url, params);
   },
   PutCarts: (params) => {

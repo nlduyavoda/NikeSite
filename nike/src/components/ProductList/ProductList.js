@@ -22,11 +22,12 @@ function ProductList() {
     const FetchListCart = async () => {
       try {
         const response = await GetList.GetCarts();
-        response.filter((item) => item.userID === 1);
-        const [{ CartDetail }] = response;
-        CartDetail.filter((item) => item.checkedOut === false);
-        const [{ carts }] = CartDetail;
-        dispatch(SetCarts(carts));
+        response.filter((item) => item.UserId === "6127562d5b0f8543dd9c2d85");
+        // const [{ CartDetail }] = response;
+        const cart = response.filter((item) => item.Active === true);
+        const [{ UserId, Active, CartDetail }] = cart;
+        console.log(CartDetail)
+        dispatch(SetCarts(CartDetail));
       } catch (error) {
         console.log("fail to fetch product list", error);
       }
