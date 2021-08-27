@@ -6,3 +6,6 @@ export const REDUCE_CARTS = "REDUCE_CARTS";
 export const TOTAL_CARTS = "TOTAL_CARTS";
 export const REMOVE_CART = "REMOVE_CART";
 export const SET_SIZE = "SET_SIZE";
+export const SET_PRODUCT = "SET_PRODUCT";
+
+

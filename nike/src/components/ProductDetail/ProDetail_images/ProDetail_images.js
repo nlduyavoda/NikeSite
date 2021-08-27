@@ -1,6 +1,5 @@
 import React from "react";
 import "./ProDetail_images.css";
-import { BsChevronCompactDown, BsFillStarFill } from "react-icons/bs";
 
 function ProDetail_images(props) {
   const item = [

@@ -30,7 +30,7 @@ function ProDetail_infor(props) {
         />
       </div>
       <div className="">
-        <Size_infor size={size} />
+        <Size_infor size={[1,2,3,4,5,6,7,8,9]} />
       </div>
       <div className="ProductDetail_notification">
         This product is excluded from site promotions and discounts.

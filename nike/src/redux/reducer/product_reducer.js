@@ -1,4 +1,4 @@
-import { SET_PRODUCTS, SET_SIZE } from "../actions/type";
+import { SET_PRODUCTS, SET_SIZE, SET_PRODUCT } from "../actions/type";
 const initialProductState = {
   productList: [],
   selectedProduct: {},
@@ -11,6 +11,9 @@ export const product_reducer = (state = initialProductState, action) => {
       return { ...state, productList: payload };
     case SET_SIZE:
       return { ...state, Size: payload };
+    case SET_PRODUCT:
+      console.log(payload);
+      return { ...state, selectedProduct: payload };
     default:
       return state;
   }

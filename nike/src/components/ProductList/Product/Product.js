@@ -12,7 +12,7 @@ function Product(props) {
   const hiddenSideBar = useSelector((state) => state.product.Size);
   const dispatch = useDispatch();
   const newProduct = {
-    productId: product.id,
+    productId: product._id,
     amount: 1,
   };
 
@@ -31,13 +31,14 @@ function Product(props) {
       dispatch(SetCarts(test));
     }
   };
-
+  const { _id, image, price, name } = product;
+  console.log(_id, image, price, name);
   return (
     <div
       className={
         hiddenSideBar === true ? "container_products" : "container_products "
       }
-      key={product.id}
+      key={product._id}
     >
       <div className="display__product">
         <img src={product.image} alt="" />
@@ -45,7 +46,7 @@ function Product(props) {
       <div className="product__details">
         <Link
           to={{
-            pathname: `/product-detail/${product.id}`,
+            pathname: `/product-detail/${product._id}`,
             state: product,
           }}
           className="title__section"
@@ -58,7 +59,7 @@ function Product(props) {
           <span className="price">${product.price}</span>
           <button
             className="btn_addToCart"
-            onClick={() => handleOnClick(product.id)}
+            onClick={() => handleOnClick(product._id)}
           >
             <FaShoppingCart></FaShoppingCart>Add To Cart
           </button>

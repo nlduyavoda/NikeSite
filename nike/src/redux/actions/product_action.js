@@ -4,6 +4,13 @@ export const SetListProduct = (productList) => {
     payload: productList,
   };
 };
+export const SetProduct = (product) => {
+  console.log(product);
+  return {
+    type: "SET_PRODUCT",
+    payload: product,
+  };
+};
 export const SetSizeee = (props) => {
   return {
     type: "SET_SIZE",

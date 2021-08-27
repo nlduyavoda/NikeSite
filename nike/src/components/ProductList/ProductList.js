@@ -26,7 +26,6 @@ function ProductList() {
         // const [{ CartDetail }] = response;
         const cart = response.filter((item) => item.Active === true);
         const [{ UserId, Active, CartDetail }] = cart;
-        console.log(CartDetail)
         dispatch(SetCarts(CartDetail));
       } catch (error) {
         console.log("fail to fetch product list", error);
@@ -40,7 +39,7 @@ function ProductList() {
   return (
     <div className="productList">
       {Products.map((item) => {
-        return <Product key={item.id} item={item}></Product>;
+        return <Product key={item._id} item={item}></Product>;
       })}
     </div>
   );
