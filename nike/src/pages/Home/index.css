@@ -16,7 +16,6 @@
   transition: 0.7s;
 }
 .home_products {
-  width: 76%;
   transition: 0.7s;
 }
 .home_products.active {

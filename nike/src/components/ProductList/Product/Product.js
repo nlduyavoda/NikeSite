@@ -5,7 +5,6 @@ import { FaShoppingCart } from "react-icons/fa";
 import { SetCarts } from "../../../redux/actions/cart_action";
 import { Link } from "react-router-dom";
 import swal from "sweetalert";
-
 function Product(props) {
   const product = props.item;
   const cart_items = useSelector((state) => state.cart.cartList);
@@ -31,8 +30,7 @@ function Product(props) {
       dispatch(SetCarts(test));
     }
   };
-  const { _id, image, price, name } = product;
-  console.log(_id, image, price, name);
+  console.log("product: ", product);
   return (
     <div
       className={

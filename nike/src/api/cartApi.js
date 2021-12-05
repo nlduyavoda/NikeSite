@@ -5,8 +5,8 @@ const cartApi = {
     const url = "/cart";
     return axiosClient.get(url, { params });
   },
-  get: (id) => {
-    const url = `/cart/${id}`;
+  get: (params) => {
+    const url = `/api/carts/${params}`;
     return axiosClient.get(url);
   },
   postList: () => {

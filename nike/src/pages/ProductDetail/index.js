@@ -9,7 +9,6 @@ import productApi from "../../api/productApi";
 import { SetProduct } from "../../redux/actions/product_action";
 
 function ProductDetail() {
-  const products = useSelector((state) => state.product.productList);
   const product = useSelector((state) => state.product.selectedProduct);
   const { id } = useParams();
   const dispatch = useDispatch();
