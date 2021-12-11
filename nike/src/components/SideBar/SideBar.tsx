@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./SideBar.css";
+import "./SideBar.scss";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
-import Ichonveron from "../SideBar/IconChevron/index";
+import Ichonveron from "./IconChevron/index";
 
 function SideBar() {
   const arrSize = [];
