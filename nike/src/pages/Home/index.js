@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import NavFilter from "../../components/Filter/NavFilter";
 import ProductList from "../../components/ProductList/ProductList";
 import SideBar from "../../components/SideBar/SideBar";
-import "./index.css";
+import "./index.scss";
 function Home() {
   const hiddenSideBar = useSelector((state) => state.product.Size);
   return (
