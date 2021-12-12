@@ -27,7 +27,7 @@ const Search = () => {
   return (
     <div className="Search-container">
       <TextField
-        placeholder="Mã đơn hàng, tên khách hàng "
+        placeholder="Search"
         variant="outlined"
         className="search-style"
         inputProps={{ className: "input" }}
