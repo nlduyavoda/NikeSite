@@ -2,7 +2,7 @@ import Home from "./pages/Home/index";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import Cart from "./pages/Cart/index";
 import ProductDetail from "./pages/ProductDetail/index";
-import Nav from "./components/Nav/Nav";
+import Nav from "./components/Nav/index";
 function App() {
   return (
     <>

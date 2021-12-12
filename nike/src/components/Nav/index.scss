@@ -1,0 +1,14 @@
+.navbar {
+  width: 100%;
+  height: 10rem;
+  &-left {
+    img {
+      height: 10rem;
+      width: 20rem;
+    }
+  }
+  &-right {
+    width: 80%;
+    border: 1px solid green;
+  }
+}
