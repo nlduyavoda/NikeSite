@@ -1,9 +1,18 @@
-.container {
-  border: 1px solid red;
-  width: 10rem;
-  height: 10rem;
-  &_icon {
+.iconCart {
+  height: 100%;
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: end;
+  &-icon {
+    height: 3.6rem;
+    width: 3.6rem;
+    position: relative;
+    bottom: 0.5rem;
+    right: 0rem;
   }
-  &_amount {
+  &-amount {
+    position: relative;
+    top: 1rem;
+    right: 2.4rem;
   }
 }

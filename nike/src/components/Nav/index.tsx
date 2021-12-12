@@ -1,5 +1,5 @@
 import React from "react";
-import FormSearching from "./FormSearching";
+import FormSearching from "./FormSearching/index";
 import "./index.scss";
 function nav() {
   return (
