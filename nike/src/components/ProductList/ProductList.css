@@ -1,13 +1,27 @@
-.col-md-3 {
-  background-color: lightblue;
-}
-.col-lg-6 {
-  background-color: lightcoral;
-}
 .productList {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  --item: 4;
+  --spacing: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
+}
+.cart {
+  height: 30rem;
+  width: calc(calc(100% / var(--item)) - var(--spacing));
+  display: flex;
+  margin-left: var(--spacing);
+  flex-direction: column;
+  flex-shrink: 0;
+  border: 1px solid;
+}
+
+.image {
+}
+.image img {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
+.content {
 }

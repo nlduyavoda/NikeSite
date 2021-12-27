@@ -9,17 +9,8 @@ function Home() {
   return (
     <div className="home_products">
       <NavFilter></NavFilter>
-      <div className="row Home">
-        <div className={hiddenSideBar === true ? "SideBar" : "SideBar active"}>
-          <SideBar></SideBar>
-        </div>
-        <div
-          className={
-            hiddenSideBar === true ? "home_products" : "home_products active"
-          }
-        >
-          <ProductList></ProductList>
-        </div>
+      <div className=" Home">
+        <ProductList></ProductList>
       </div>
     </div>
   );
