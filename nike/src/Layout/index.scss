@@ -1,0 +1,11 @@
+._App {
+  display: flex;
+  flex-direction: column;
+  .layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .component {
+  }
+}
