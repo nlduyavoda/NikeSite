@@ -3,7 +3,8 @@ import * as React from "react";
 import { render } from "react-dom";
 import { Provider } from "react-redux";
 import App from "./App";
-import store from "./redux/store";
+import { apolloClient } from "./Graphql/apolloClient";
+import { store } from "./redux/store";
 import reportWebVitals from "./reportWebVitals";
 import "./styles/index.scss";
 const pokemonApi = "https://graphql-pokeapi.graphcdn.app/";
@@ -14,11 +15,13 @@ const client = new ApolloClient({
 });
 
 render(
-  <ApolloProvider client={client}>
+  <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <ApolloProvider client={apolloClient}>
+        <App />
+      </ApolloProvider>
     </Provider>
-  </ApolloProvider>,
+  </React.StrictMode>,
   document.getElementById("root")
 );
 

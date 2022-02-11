@@ -1,37 +1,40 @@
-import React, { useState } from "react";
-import "./ProductList.css";
 import Button from "@mui/material/Button";
-import Layout from "../../Layout/index";
-import { useEffect } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-import { gql, useMutation, useQuery } from "@apollo/client";
-const GET_POKEMONS = gql`
-  query getPokemons($limit: Int, $offset: Int) {
-    pokemons(limit: $limit, offset: $offset) {
-      results {
-        name
-        image
-        artwork
-      }
-    }
-  }
-`;
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchingProduct } from "../../services/pokemonService";
+import { getlist } from "../../Slices/PokemonSlice";
+import "./ProductList.css";
+type PokemonType = {
+  name: String;
+  image: String;
+  artwork: String;
+};
+
 function ProductList() {
-  const { loading, error, data } = useQuery(GET_POKEMONS, {
-    variables: {
-      limit: 10,
-      offset: 10,
-    },
-  });
-  const [state, setState] = useState(null);
+  const [state, setState] = useState<any | null>(null);
+  const dispatch = useDispatch();
+  const pokemonList = useSelector((state: any) => state);
+
   useEffect(() => {
-    setState(data?.pokemons?.results);
-  }, [data?.pokemons?.results]);
+    fetchingProduct().then((res) => {
+      dispatch(getlist(res));
+    });
+  }, []);
+
+  useEffect(() => {
+    if (pokemonList) {
+      setState(pokemonList.pokemons.pokemon);
+    }
+  }, [pokemonList]);
+
+  console.log(typeof state);
+  console.log(state);
+
   return (
     <div className="Productlist">
       {state ? (
         <>
-          {state.map((item, index) => {
+          {state.map((item: any, index: number) => {
             return (
               <div className="item" key={index}>
                 <div className="item_image">
