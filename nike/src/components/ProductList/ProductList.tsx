@@ -1,19 +1,15 @@
 import Button from "@mui/material/Button";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "../../redux/store";
 import { fetchingProduct } from "../../services/pokemonService";
 import { getlist } from "../../Slices/PokemonSlice";
 import "./ProductList.css";
-type PokemonType = {
-  name: String;
-  image: String;
-  artwork: String;
-};
 
 function ProductList() {
   const [state, setState] = useState<any | null>(null);
   const dispatch = useDispatch();
-  const pokemonList = useSelector((state: any) => state);
+  const pokemonList = useSelector((state: RootState) => state);
 
   useEffect(() => {
     fetchingProduct().then((res) => {
@@ -23,13 +19,9 @@ function ProductList() {
 
   useEffect(() => {
     if (pokemonList) {
-      setState(pokemonList.pokemons.pokemon);
+      setState(pokemonList.pokemons);
     }
   }, [pokemonList]);
-
-  console.log(typeof state);
-  console.log(state);
-
   return (
     <div className="Productlist">
       {state ? (

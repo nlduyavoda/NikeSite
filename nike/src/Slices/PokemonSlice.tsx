@@ -1,24 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
-type pokemons = {
-  pokemon: {
-    name: string;
-    image: string;
-    artwork: string;
-  };
-};
-const initialState: pokemons = {
-  pokemon: {
-    name: "",
-    image: "",
-    artwork: "",
-  },
-};
+type pokemon = [{ name: string; image: string; artwork: string }];
+const initialState: pokemon = [{ name: "", image: "", artwork: "" }];
+
 export const pokemonSlice = createSlice({
   name: "pokemon",
   initialState,
   reducers: {
     getlist(state, action) {
-      state.pokemon = action.payload;
+      state = action.payload;
+      return state;
     },
   },
 });
