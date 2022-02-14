@@ -1,22 +1,26 @@
+import { useQuery } from "@apollo/client";
 import Button from "@mui/material/Button";
 import React, { useEffect, useState } from "react";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
+import { useHistory } from "react-router-dom";
+import { GETLIST } from "../../Graphql/Queries/Pokemon";
 import { RootState } from "../../redux/store";
-import { fetchingProduct } from "../../services/pokemonService";
 import { getlist } from "../../Slices/PokemonSlice";
 import "./ProductList.css";
 
+const initialVariables = { limit: 50, offset: 50 };
 function ProductList() {
   const [state, setState] = useState<any | null>(null);
+  const history = useHistory();
   const dispatch = useDispatch();
   const pokemonList = useSelector((state: RootState) => state);
-
-  useEffect(() => {
-    fetchingProduct().then((res) => {
-      dispatch(getlist(res));
-    });
-  }, []);
-
+  const { data } = useQuery(GETLIST, {
+    variables: initialVariables,
+  });
+  if (data) {
+    dispatch(getlist(data.pokemons.results));
+  }
   useEffect(() => {
     if (pokemonList) {
       setState(pokemonList.pokemons);
@@ -39,7 +43,13 @@ function ProductList() {
                   <div className="information_bottom">
                     <div className="price">$180</div>
                     <div className="pay">
-                      <Button>ADD TO CART</Button>
+                      <Button
+                        onClick={() => {
+                          history.push("/detail");
+                        }}
+                      >
+                        <AiOutlineShoppingCart />
+                      </Button>
                     </div>
                   </div>
                 </div>

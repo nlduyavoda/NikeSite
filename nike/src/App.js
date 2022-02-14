@@ -1,10 +1,11 @@
-import { BrowserRouter as Router } from "react-router-dom";
-import Layout from "./Layout/index";
-
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import ProductList from "./components/ProductList/ProductList.tsx";
 function App() {
   return (
     <Router>
-      <Layout />
+      <Route exact path="/">
+        <ProductList />
+      </Route>
     </Router>
   );
 }
