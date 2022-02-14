@@ -45,7 +45,7 @@ function ProductList() {
                     <div className="pay">
                       <Button
                         onClick={() => {
-                          history.push("/detail");
+                          history.push(`/detail/${index}`, item);
                         }}
                       >
                         <AiOutlineShoppingCart />

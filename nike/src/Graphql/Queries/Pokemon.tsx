@@ -7,6 +7,7 @@ export const GETLIST = gql`
         name
         image
         artwork
+        dreamworld
       }
     }
   }
